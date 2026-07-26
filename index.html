@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FixRight Home Maintenance | Electrician, Painter, Carpenter, Plumber & Mason Services</title>
+  <meta name="description"
+    content="FixRight provides trusted home maintenance services including electrical work, painting, carpentry, plumbing, and mason work. Call us for a free quote today.">
+
+  <!-- ============ GOOGLE FONTS ============ -->
+  <!-- Poppins is used for headings, Inter is used for regular body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- ============ STYLESHEET ============ -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================
+       PAGE LOADER
+       This full-screen loader shows for a short moment when the
+       page first opens, then fades out automatically (see script.js)
+  ========================================================== -->
+  <div id="page-loader">
+    <div class="loader-mark">
+      <span class="loader-ring"></span>
+      <span class="loader-logo">FR</span>
+    </div>
+    <p class="loader-text">FixRight Home Maintenance</p>
+  </div>
+
+  <!-- =========================================================
+       HEADER / NAVIGATION
+  ========================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <!-- LOGO: replace the text below or swap in an <img> tag with your logo file -->
+      <a href="#home" class="logo">
+        <span class="logo-badge">FR</span>
+        <span class="logo-text">FixRight<span>Home Maintenance</span></span>
+      </a>
+
+      <!-- MAIN NAVIGATION (desktop) -->
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- CONTACT BUTTON (desktop) -->
+      <a href="#contact" class="btn btn-primary header-cta">Get a Free Quote</a>
+
+      <!-- HAMBURGER BUTTON (mobile only) -->
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- DARK OVERLAY shown behind the mobile sidebar -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- MOBILE SIDEBAR MENU -->
+  <aside class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-top">
+      <span class="logo-text">FixRight</span>
+      <button class="sidebar-close" id="sidebarCloseBtn" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="sidebar-links">
+      <li><a href="#home" class="sidebar-link">Home</a></li>
+      <li><a href="#services" class="sidebar-link">Services</a></li>
+      <li><a href="#reviews" class="sidebar-link">Reviews</a></li>
+      <li><a href="#contact" class="sidebar-link">Contact Us</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary sidebar-cta">Get a Free Quote</a>
+  </aside>
+
+  <!-- caution-stripe accent bar used as a small signature divider throughout the site -->
+  <div class="stripe-divider" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- =========================================================
+         HERO SECTION
+    ========================================================== -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+
+        <!-- LEFT SIDE: headline + intro + button -->
+        <div class="hero-content reveal">
+          <p class="eyebrow">Trusted local tradespeople</p>
+          <h1 class="hero-title">Home repairs done right, <span>the first time.</span></h1>
+          <p class="hero-text">
+            From a flickering light switch to a full room repaint, FixRight brings skilled,
+            background-checked electricians, painters, carpenters, plumbers, and mason
+            workers to your doorstep &mdash; on time and on budget.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Book a Service</a>
+            <a href="#services" class="btn btn-outline">View Services</a>
+          </div>
+
+          <!-- small trust indicators -->
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-number">12+</span>
+              <span class="hero-stat-label">Years in Business</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-number">4,800+</span>
+              <span class="hero-stat-label">Jobs Completed</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-number">4.9★</span>
+              <span class="hero-stat-label">Average Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE: large realistic image of a carpenter working -->
+        <!-- Replace the src below with your own photo any time -->
+        <div class="hero-image reveal">
+          <img src="pic/plumber.webp" alt="Professional carpenter working with wood tools" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         QUICK SERVICE CARDS ROW (below hero)
+    ========================================================== -->
+    <section class="service-row-section" id="serviceRow">
+      <!-- faint construction-pattern background, purely decorative -->
+      <div class="pattern-bg" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="service-row">
+
+          <div class="service-chip reveal">
+            <img src="pic/electriction.webp" alt="Electrician working on a wiring panel">
+            <span>Electrician</span>
+          </div>
+
+          <div class="service-chip reveal">
+            <img src="pic/painter.webp" alt="Painter rolling paint on an interior wall">
+            <span>Painter</span>
+          </div>
+
+          <div class="service-chip reveal">
+            <img src="pic/carpentor.webp" alt="Carpenter measuring a wooden plank">
+            <span>Carpenter</span>
+          </div>
+
+          <div class="service-chip reveal">
+            <img src="pic/plumber.webp" alt="Plumber repairing pipes under a sink">
+            <span>Plumber</span>
+          </div>
+
+          <div class="service-chip reveal">
+            <img src="pic/meson.webp" alt="Mason laying bricks on a wall">
+            <span>Mason Work</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="why-section">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <span class="eyebrow">Why Choose Us</span>
+
+          <h2>Why Homeowners Trust Our Services</h2>
+
+          <p class="section-sub">
+            We deliver reliable home maintenance services with experienced professionals, affordable pricing, and
+            guaranteed customer satisfaction.
+          </p>
+
+        </div>
+
+        <div class="why-grid">
+
+          <div class="why-card reveal">
+
+            <div class="why-icon">
+              <i class="fa-solid fa-user-check"></i>
+            </div>
+
+            <h3>Experienced Team</h3>
+
+            <p>
+              Our skilled technicians have years of experience handling home maintenance projects professionally.
+            </p>
+
+          </div>
+
+          <div class="why-card reveal">
+
+            <div class="why-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+
+            <h3>Fast Response</h3>
+
+            <p>
+              We respond quickly and complete jobs efficiently without compromising quality.
+            </p>
+
+          </div>
+
+          <div class="why-card reveal">
+
+            <div class="why-icon">
+              <i class="fa-solid fa-wallet"></i>
+            </div>
+
+            <h3>Affordable Pricing</h3>
+
+            <p>
+              Transparent pricing with no hidden charges for every maintenance service.
+            </p>
+
+          </div>
+
+          <div class="why-card reveal">
+
+            <div class="why-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <h3>Quality Guarantee</h3>
+
+            <p>
+              Customer satisfaction is our priority with dependable workmanship on every project.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================================================
+         FULL SERVICES SECTION
+    ========================================================== -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What we do</p>
+          <h2>Five trades. One reliable team.</h2>
+          <p class="section-sub">We keep our service list focused so every job gets a true specialist, not a generalist.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- SERVICE CARD 1: Electrician -->
+          <article class="service-card reveal">
+            <div class="service-card-img">
+              <img src="pic/electriction 2.webp" alt="Electrician inspecting a home fuse box" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Electrician</h3>
+              <p>Safe wiring, fuse box upgrades, socket and switch repairs, and lighting installation handled by
+                licensed electricians.</p>
+              <a href="#contact" class="read-more">Read More <span>&rarr;</span></a>
+            </div>
+          </article>
+
+          <!-- SERVICE CARD 2: Painter -->
+          <article class="service-card reveal">
+            <div class="service-card-img">
+              <img src="pic/painter 2.webp" alt="Painter applying fresh paint to a living room wall" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Painter</h3>
+              <p>Interior and exterior painting with clean edges, premium finishes, and color guidance for a lasting
+                fresh look.</p>
+              <a href="#contact" class="read-more">Read More <span>&rarr;</span></a>
+            </div>
+          </article>
+
+          <!-- SERVICE CARD 3: Carpenter -->
+          <article class="service-card reveal">
+            <div class="service-card-img">
+              <img src="pic/carpentor 2.webp" alt="Carpenter building a wooden cabinet" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Carpenter</h3>
+              <p>Custom furniture, cabinet repair, door and window fitting, and precision woodwork built to last.</p>
+              <a href="#contact" class="read-more">Read More <span>&rarr;</span></a>
+            </div>
+          </article>
+
+          <!-- SERVICE CARD 4: Plumber -->
+          <article class="service-card reveal">
+            <div class="service-card-img">
+              <img src="pic/plumber 2.webp" alt="Plumber fixing a leaking pipe" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Plumber</h3>
+              <p>Leak repairs, pipe replacement, drain cleaning, and bathroom or kitchen fixture installation done
+                right.</p>
+              <a href="#contact" class="read-more">Read More <span>&rarr;</span></a>
+            </div>
+          </article>
+
+          <!-- SERVICE CARD 5: Mason Work -->
+          <article class="service-card reveal">
+            <div class="service-card-img">
+              <img src="pic/meson 2.webp" alt="Mason worker laying bricks and plastering a wall" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Mason Work</h3>
+              <p>Brickwork, plastering, tiling, and structural repairs from experienced masons who value clean
+                finishing.</p>
+              <a href="#contact" class="read-more">Read More <span>&rarr;</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <section class="counter-section">
+
+      <div class="container">
+
+        <div class="counter-grid">
+
+          <div class="counter-box reveal">
+            <i class="fa-solid fa-briefcase"></i>
+            <h2 class="counter" data-target="500">0</h2>
+            <p>Completed Projects</p>
+          </div>
+
+          <div class="counter-box reveal">
+            <i class="fa-solid fa-face-smile"></i>
+            <h2 class="counter" data-target="350">0</h2>
+            <p>Happy Clients</p>
+          </div>
+
+          <div class="counter-box reveal">
+            <i class="fa-solid fa-award"></i>
+            <h2 class="counter" data-target="10">0</h2>
+            <p>Years Experience</p>
+          </div>
+
+          <div class="counter-box reveal">
+            <i class="fa-solid fa-headset"></i>
+            <h2>24/7</h2>
+            <p>Customer Support</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================================================
+         REVIEWS SECTION
+    ========================================================== -->
+    <section class="reviews-section" id="reviews">
+      <div class="pattern-bg pattern-bg-light" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Customer stories</p>
+          <h2>What homeowners say about us</h2>
+        </div>
+
+        <div class="reviews-grid">
+
+          <div class="review-card reveal">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"The electrician arrived on time, explained everything clearly, and fixed our wiring
+              issue in under an hour. Genuinely impressed."</p>
+            <div class="review-person">
+              <img src="pic/electriction.webp" alt="Photo of customer Sara Ahmed">
+              <div>
+                <span class="review-name">Sara Ahmed</span>
+                <span class="review-role">Homeowner, DHA</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card reveal">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Our carpenter rebuilt the kitchen cabinets and they look better than the originals.
+              Clean work, no mess left behind."</p>
+            <div class="review-person">
+              <img src="pic/carpentor 2.webp" alt="Photo of customer Bilal Khan">
+              <div>
+                <span class="review-name">Bilal Khan</span>
+                <span class="review-role">Homeowner, Gulshan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card reveal">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Booked a plumber for a leaking pipe and a mason for a small wall repair on the same
+              visit. Fast, tidy, fairly priced."</p>
+            <div class="review-person">
+              <img src="pic/plumber.webp" alt="Photo of customer Farah Hussain">
+              <div>
+                <span class="review-name">Farah Hussain</span>
+                <span class="review-role">Homeowner, Clifton</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+
+      <div class="container">
+
+        <div class="cta-content reveal">
+
+          <h2>Need Professional Home Maintenance?</h2>
+
+          <p>
+            Book trusted electricians, plumbers, painters, carpenters and
+            masonry experts today. Fast response, affordable pricing and
+            guaranteed quality workmanship.
+          </p>
+
+          <a href="#contact" class="btn-primary">
+            Get Free Quote
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- =========================================================
+         CONTACT SECTION
+    ========================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form-wrap reveal">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Request a free quote</h2>
+          <p class="section-sub">Tell us what you need done and we'll get back to you within one business day.</p>
+
+          <!-- This form does not submit anywhere yet. Connect it to your email
+               service or backend of choice, or see script.js for a placeholder handler. -->
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <label for="nameInput">Full Name</label>
+              <input type="text" id="nameInput" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-row">
+              <label for="emailInput">Email Address</label>
+              <input type="email" id="emailInput" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-row">
+              <label for="phoneInput">Phone Number</label>
+              <input type="tel" id="phoneInput" name="phone" placeholder="+92 3102813524" required>
+            </div>
+            <div class="form-row">
+              <label for="messageInput">Message</label>
+              <textarea id="messageInput" name="message" rows="4" placeholder="Tell us about the job..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Submit Request</button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+
+        <!-- CONTACT INFO + MAP PLACEHOLDER -->
+        <div class="contact-info-wrap reveal">
+          <ul class="contact-info-list">
+            <li>
+              <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <span class="contact-label">Phone</span>
+                <a href="tel:+923001234567">+92 3217006457</a>
+                <a href="tel:+923001234567">+92 3217006457</a>
+              </div>
+
+
+            </li>
+            <li>
+              <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:info@fixright.com">info@fixright.com</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div>
+                <span class="contact-label">Office</span>
+                <span>Shop 12, Main Boulevard, Karachi, Pakistan</span>
+              </div>
+            </li>
+          </ul>
+
+          <!-- MAP PLACEHOLDER: swap this div for a real Google Maps <iframe> embed later -->
+          <div class="map-placeholder">
+            <iframe src="https://www.google.com/maps?q=Karachi,+Pakistan&output=embed" width="100%" height="250"
+              style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FLOATING WHATSAPP BUTTON
+       Change the phone number in the href below to update it
+  ========================================================== -->
+  <a href="https://wa.me/923001234567" class="whatsapp-float" target="_blank" rel="noopener"
+    aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="currentColor" aria-hidden="true">
+      <path
+        d="M16.004 3C9.373 3 4 8.373 4 15.004c0 2.4.63 4.65 1.828 6.61L4 29l7.56-1.79a11.94 11.94 0 0 0 4.444.85h.004C22.635 28.06 28 22.687 28 16.055 28 9.373 22.635 3 16.004 3zm7.03 16.86c-.297.833-1.47 1.545-2.42 1.75-.646.138-1.49.248-4.33-.93-3.632-1.5-5.968-5.166-6.15-5.406-.18-.24-1.47-1.955-1.47-3.73 0-1.775.93-2.646 1.26-3.008.33-.362.72-.452.96-.452.24 0 .48.003.69.014.222.01.518-.084.81.618.297.72 1.01 2.487 1.098 2.667.09.18.15.39.03.63-.12.24-.18.39-.36.6-.18.21-.378.468-.54.63-.18.18-.366.375-.157.735.21.36.93 1.53 1.995 2.478 1.372 1.222 2.53 1.6 2.89 1.78.36.18.57.15.78-.09.21-.24.9-1.05 1.14-1.41.24-.36.48-.3.81-.18.33.12 2.1.99 2.46 1.17.36.18.6.27.69.42.09.15.09.87-.21 1.71z" />
+    </svg>
+  </a>
+  <a href="tel:+923001234567" class="call-button">
+
+    <i class="fa-solid fa-phone"></i>
+
+  </a>
+<button id="scrollTop">
+<i class="fa-solid fa-angles-up"></i>
+</button>
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <span class="logo-text">FixRight<span>Home Maintenance</span></span>
+        <p>Skilled tradespeople for every corner of your home, backed by a 12-year track record of tidy, reliable work.
+        </p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#services">Electrician</a></li>
+          <li><a href="#services">Painter</a></li>
+          <li><a href="#services">Carpenter</a></li>
+          <li><a href="#services">Plumber</a></li>
+          <li><a href="#services">Mason Work</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+923217006457">+92 3217006457</a></li>
+          <li><a href="tel:+923102813524">+92 3102813524</a></li>
+          <li><a href="mailto:malikimran@gmail.com">malikimran@gmail.com</a></li>
+          <li>Shop 12, Main Boulevard, Karachi</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> FixRight Home Maintenance. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============ JAVASCRIPT ============ -->
+  <script src="script.js"></script>
+</body>
+
+</html>
