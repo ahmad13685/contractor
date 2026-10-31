@@ -1,5 +1,5 @@
 /* =========================================================================
-   FIXRIGHT HOME MAINTENANCE — SCRIPT.JS
+   PREFERBUILD — SCRIPT.JS
    -------------------------------------------------------------------------
    Plain, beginner-friendly JavaScript. Each section below does one job and
    is commented so you can find and edit it easily.

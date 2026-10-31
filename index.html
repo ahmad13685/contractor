@@ -4,9 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FixRight Home Maintenance | Electrician, Painter, Carpenter, Plumber & Mason Services</title>
+  <title>PreferBuild | Construction &amp; Grey Structure</title>
   <meta name="description"
-    content="FixRight provides trusted home maintenance services including electrical work, painting, carpentry, plumbing, and mason work. Call us for a free quote today.">
+    content="PreferBuild provides trusted construction and grey structure services including electrical work, painting, carpentry, plumbing, and mason work. Built on Trust. Call us for a free quote today.">
+
+  <!-- ============ FAVICON / BROWSER THEME ============ -->
+  <link rel="icon" href="pic/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="pic/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="pic/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="pic/favicon-192.png">
+  <link rel="apple-touch-icon" href="pic/apple-touch-icon.png">
+  <meta name="theme-color" content="#62676D">
 
   <!-- ============ GOOGLE FONTS ============ -->
   <!-- Poppins is used for headings, Inter is used for regular body text -->
@@ -29,11 +37,10 @@
        page first opens, then fades out automatically (see script.js)
   ========================================================== -->
   <div id="page-loader">
-    <div class="loader-mark">
+    <img class="loader-brand" src="pic/preferbuild-logo-sm.png" alt="PreferBuild - Built on Trust." width="720" height="444">
+    <div class="loader-mark" aria-hidden="true">
       <span class="loader-ring"></span>
-      <span class="loader-logo">FR</span>
     </div>
-    <p class="loader-text">FixRight Home Maintenance</p>
   </div>
 
   <!-- =========================================================
@@ -42,10 +49,9 @@
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
 
-      <!-- LOGO: replace the text below or swap in an <img> tag with your logo file -->
-      <a href="#home" class="logo">
-        <span class="logo-badge">FR</span>
-        <span class="logo-text">FixRight<span>Home Maintenance</span></span>
+      <!-- LOGO: PreferBuild logo (pic/preferbuild-logo-sm.png). Height is set in style.css (.logo-img); width stays automatic so the aspect ratio is never distorted -->
+      <a href="#home" class="logo" aria-label="PreferBuild - Built on Trust. Go to home">
+        <img class="logo-img" src="pic/preferbuild-logo-sm.png" alt="PreferBuild - Built on Trust." width="720" height="444">
       </a>
 
       <!-- MAIN NAVIGATION (desktop) -->
@@ -76,7 +82,9 @@
   <!-- MOBILE SIDEBAR MENU -->
   <aside class="mobile-sidebar" id="mobileSidebar">
     <div class="sidebar-top">
-      <span class="logo-text">FixRight</span>
+      <a href="#home" class="logo sidebar-logo" aria-label="PreferBuild - Built on Trust. Go to home">
+        <img class="logo-img" src="pic/preferbuild-logo-sm.png" alt="PreferBuild - Built on Trust." width="720" height="444">
+      </a>
       <button class="sidebar-close" id="sidebarCloseBtn" aria-label="Close menu">&times;</button>
     </div>
     <ul class="sidebar-links">
@@ -229,12 +237,12 @@
           <div class="why-content reveal">
 
             <span class="section-tag">
-              WHY CHOOSE FIXRIGHT
+              WHY CHOOSE PREFERBUILD
             </span>
 
             <h2>
               Why Home owners Choose
-              <span>FixRight</span>
+              <span>PreferBuild</span>
             </h2>
 
             <p>
@@ -624,7 +632,7 @@
               <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
               <div>
                 <span class="contact-label">Email</span>
-                <a href="mailto:info@fixright.com">info@fixright.com</a>
+                <a href="mailto:info@fixright.com">preferbuild@gmail.com</a>
               </div>
             </li>
           </ul>
@@ -669,13 +677,15 @@
     <div class="container footer-grid">
 
       <div class="footer-brand">
-        <span class="logo-text">FixRight<span>Home Maintenance</span></span>
+        <a href="#home" class="logo footer-logo" aria-label="PreferBuild - Built on Trust. Go to home">
+          <img class="logo-img" src="pic/preferbuild-logo-sm.png" alt="PreferBuild - Built on Trust." width="720" height="444" loading="lazy">
+        </a>
         <p>Skilled tradespeople for every corner of your home, backed by a 12-year track record of tidy, reliable work.
         </p>
         <div class="social-icons">
-          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i>
+          <a href="https://www.facebook.com/profile.php?id=61595962256979" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i>
           </a>
-          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i>
+          <a href="https://www.instagram.com/preferbuild/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i>
           </a>
         </div>
       </div>
@@ -713,7 +723,7 @@
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; <span id="currentYear"></span> FixRight Home Maintenance. All rights reserved.</p>
+      <p>&copy; <span id="currentYear"></span> PreferBuild. All rights reserved.</p>
     </div>
   </footer>
 
